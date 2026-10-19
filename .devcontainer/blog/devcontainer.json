@@ -9,7 +9,7 @@
   "portsAttributes": {
     "4321": {
       "label": "Application",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openPreviewNight"
     }
   },
 
@@ -17,7 +17,7 @@
 
   "postCreateCommand": "pnpm install && cd /workspaces/astro && pnpm run build",
 
-  "waitFor": "postCreateCommand",
+  "waitFor": "postCreateCommandforMesa",
 
   "postAttachCommand": {
     "Server": "pnpm start --host"
